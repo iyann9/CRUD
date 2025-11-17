@@ -23,12 +23,13 @@
 
     <?php
     if (isset($_POST['submit'])) {
-        $sql = "INSERT INTO alumni (nama, nik, nisn, tempat_lahir, tanggal_lahir, alamat, tahun_lulus, jurusan)
+        $sql = "INSERT INTO nmahasiswa (nama, nik, nisn, tempat_lahir, tanggal_lahir, alamat, tahun_lulus, jurusan)
             VALUES ('$_POST[nama]', '$_POST[nik]', '$_POST[nisn]', '$_POST[tempat_lahir]', '$_POST[tanggal_lahir]', '$_POST[alamat]', '$_POST[tahun_lulus]', '$_POST[jurusan]')";
         mysqli_query($conn, $sql);
         echo "<p>Data berhasil disimpan! <a href='index.php'>Kembali</a></p>";
     }
     ?>
 </body>
+
 
 </html>
